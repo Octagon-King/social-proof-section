@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --PrimaryVeryDarkMagenta: hsl(300, 43%, 22%);
+    --PrimarySoftPink: hsl(333, 80%, 67%);
+    
+    --NeutralDarkGrayishMagenta: hsl(303, 10%, 53%);
+    --NeutralLightGrayishMagenta: hsl(300, 24%, 96%);
+    --NeutralWhite: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.875rem;
+}
+
+/* Mobile Layout */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-ratings {
+    
+}
+
+.header {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 23rem;
+
+}
+
+.header h1 {
+    width: 90%;
+    font-size: 2rem;
+    color: var(--PrimaryVeryDarkMagenta);
+}
+
+.header p {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--NeutralDarkGrayishMagenta);
+}
+
+.ratings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.box-1, .box-2, .box-3 {
+    width: 90%;
+    height: 80px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 23rem;
+    background-color: var(--NeutralLightGrayishMagenta);
+}
+
+.box h3 {
+    margin-top: 10px;
+    color: var(--PrimaryVeryDarkMagenta);
+}
+
+.qoutes {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qoutes-box-1, .qoutes-box-2, .qoutes-box-3 {
+    width: 90%;
+    background-color: var(--PrimaryVeryDarkMagenta);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.user-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 60%;
+    margin-right: 100px;
+}
+
+.user-box img {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.user-box h4 {
+    color: var(--NeutralWhite);
+}
+
+.user-box p {
+    color: var(--PrimarySoftPink);
+}
+
+.name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.para {
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--NeutralWhite);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 0.938rem;
+        font-weight: 400;
+    }
+
+    main {
+        width: 1440px;
+        margin: 0 auto;
+
+    }
+
+    .header-ratings {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        max-width: 29rem;
+        display: flex;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        margin-top: 10px;
+    }
+
+    .ratings {
+        max-width: 51rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box-1, .box-2, .box-3 {
+        max-width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 60px;
+    }
+
+    .box-2{
+        margin-left: 150px;
+    }
+
+    .box-3{
+        margin-left: 300px;
+    }
+
+    .user-box {
+        margin-right: 140px;
+    }
+
+
+    .svg-images {
+        margin-top: 10px;
+    }
+
+    .qoutes {
+        margin-top: 70px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .qoutes-box-1, .qoutes-box-2, .qoutes-box-3 {
+        margin-top: 10px;
+        height: 220px;
+    }
+
+    .qoutes-box-2 {
+        margin-top: 60px;
+    }
+
+    .qoutes-box-3 {
+        margin-top: 120px;
+    }
+
+    .para {
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-size: 0.938rem;
+    }
+
+}
